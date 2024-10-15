@@ -1,0 +1,59 @@
+
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "streetwear",
+        "friendly_name": "Streetwear"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "activewear",
+        "friendly_name": "Activewear"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "formal_wear",
+        "friendly_name": "Formal Wear"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "footwear",
+        "friendly_name": "Footwear"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+      }
+    },
+    {
+      "pk": 7,
+      "model": "products.category",
+      "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+      }
+    }
+  ]
