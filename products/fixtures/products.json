@@ -51,7 +51,7 @@
           "description":"Blend into the urban jungle with our Urban Flow Camo Streetwear Pants. These pants feature a classic camouflage print, perfect for adding a rugged edge to your street style. Made from durable, high-quality fabric, they offer a comfortable fit with a modern, relaxed silhouette. Multiple pockets provide practical storage, while the adjustable waistband ensures a perfect fit. Whether you're exploring the city or hanging out with friends, these camo pants are your go-to for a bold, stylish look.",
           "price":29.99,
           "category":1,
-          "rating":2.0,
+          "rating":4.5,
           "image_url":"/media/camouflage_pants.jpg",
           "image":"camouflage_pants.jpg"
        }
@@ -60,56 +60,56 @@
        "pk":5,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002111605",
-          "name":"Simply Calphalon Enameled Cast Iron Panini Pan",
-          "description":"Durable enameled cast iron construction allows the panini pan to heat evenly, so you can whip up a meal with ease and complete confidence.  cooks with little to no oils or fats so every recipe is healthier nonstick interior for quick and easy clean-ups stainless steel knob on cover enameled cast iron heats evenly and consistently stove, broiler and oven safe Cast iron/stainless steel. Dishwasher safe. Imported. ",
-          "price":232.99,
-          "category":7,
-          "rating":5.0,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1115201210371197C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1115201210371197C.jpg"
+          "sku":"TPNVY005",
+          "name":"Navy Top",
+          "description":"Stay stylish and comfortable during your workouts with our Urban Flow Navy Activewear Top. Designed with high-performance fabric, this top offers excellent breathability and moisture-wicking properties to keep you cool and dry. The sleek navy color adds a touch of sophistication, while the fitted design ensures a flattering silhouette. Perfect for the gym, yoga, or outdoor activities, this top is your go-to choice for any active lifestyle.",
+          "price":24.99,
+          "category":2,
+          "rating":3.5,
+          "image_url":"/media/navy_top.jpg",
+          "image":"navy_top.jpg"
        }
     },
     {
        "pk":6,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002260206",
-          "name":"The Foundry Supply Co. Solid Pocket TeeBig & Tall",
-          "description":"Get a better basic tee in a size that truly fits with this pocket t-shirt from The Foundry Supply Co.  short-sleeve, crew-neck tee left chest pocket 100% cotton washable imported",
-          "price":30.99,
-          "category":9,
-          "rating":4.7,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0624201520422666C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0624201520422666C.jpg"
+          "sku":"TPBLU006",
+          "name":"Blue & Black Top",
+          "description":"Enhance your workout wardrobe with our Urban Flow Blue and Black Activewear Top. This top combines style and performance, featuring a striking blue and black color scheme. Made from high-performance, moisture-wicking fabric, it keeps you cool and dry during intense workouts. The ergonomic design ensures a comfortable fit, while the breathable material allows for maximum movement. Perfect for the gym, running, or any fitness activity, this top is your ideal companion for an active lifestyle.",
+          "price":24.99,
+          "category":2,
+          "rating":4.5,
+          "image_url":"/media/blue_black_top.jpg",
+          "image":"blue_black_top.jpg"
        }
     },
     {
        "pk":7,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002440521",
-          "name":"Liz Claiborne Classic Sophie Secretly Slender Trouser Leg Pants - Plus",
-          "description":"Walk a little taller in our slimming straight-leg pants. flat front slim fit straight leg front fly with nylon zipper, hook and bar closure 32\" inseam polyester/rayon/spandex washable imported ",
-          "price":59.0,
-          "category":4,
-          "rating":4.4,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0226201317034754M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0226201317034754M.jpg"
+          "sku":"JRSGY007",
+          "name":"Gray Joggers",
+          "description":"Elevate your workout wardrobe with our Urban Flow Gray Activewear Joggers. Crafted from a premium blend of breathable and moisture-wicking fabrics, these joggers ensure maximum comfort and performance. Featuring an elastic waistband with a drawstring for a customizable fit, and tapered legs with cuffed ankles for a sleek, modern look. Convenient side pockets provide storage for essentials, making these joggers perfect for both active and casual wear.",
+          "price":29.99,
+          "category":2,
+          "rating":3,
+          "image_url":"/media/gray_joggers.jpg",
+          "image":"gray_joggers.jpg"
        }
     },
     {
        "pk":8,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002601115",
-          "name":"Rachael Ray Ceramic Olive Oil Dispenser",
-          "description":"This olive oil dispenser is designed for storing extra virgin olive oil, so it's close at hand for drizzling on food.  24-ounce capacity cruet opaque bottle and non-porous glazed interior keep oil in the dark to avoid oxidation and preserve taste playful, contemporary design Stoneware. Dishwasher-safe. Imported.",
-          "price":36.99,
-          "category":7,
-          "rating":4.5,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0926201317071162M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0926201317071162M.jpg"
+          "sku":"JRSBK008",
+          "name":"Black Joggers",
+          "description":"Upgrade your activewear collection with our Urban Flow Black Activewear Joggers. Designed with a blend of breathable and moisture-wicking fabrics, these joggers provide ultimate comfort and performance. They feature an elastic waistband with a drawstring for a personalized fit, and tapered legs with cuffed ankles for a contemporary style. Side pockets offer convenient storage, making these joggers perfect for both workouts and casual outings.",
+          "price":29.99,
+          "category":2,
+          "rating":3.5,
+          "image_url":"/media/black_joggers.jpg",
+          "image":"black_joggers.jpg"
        }
     },
     {
