@@ -58,7 +58,19 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #000 !important;
+}
+
+.border-white {
+    border: 1px solid #fff !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.bg-white {
+    background: #fff !important;
 }
 
 /* -------------------------------- Media Queries */
@@ -66,7 +78,7 @@ body {
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 80%;
+    max-width: 66%;
   }
 }
 
