@@ -116,224 +116,224 @@
        "pk":9,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002690715",
-          "name":"Protech Performance Sheet Set",
-          "description":"Protech sheets are like activewear for your bed! The same cutting edge technology that is used in today's sportswear is also used in these Protech Plus sheets to give you a better night's sleep. Breathable ultra-fine microfiber wicks away moisture, keeping your body cool throughout the night while a 4-way stretch component allows you comfort in movement. This stretching ability also helps while making the bed, fitting most premium size mattresses; you won't have to struggle to get the sheets to fit all the way around.  4-way stretch component allows you comfort in movement available in a variety of solid colors microfiber knit fits mattresses up to 19\" deep Set includes: fitted sheet flat sheet 2 pillowcases Polyester/spandex. Washable. Imported. Full: 54x75 Queen: 60x80 King: 78x80 Cal. King: 72x84",
-          "price":169.99,
-          "category":2,
-          "rating":4.7,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1020201517025390M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP1020201517025390M.jpg"
+          "sku":"FLJKTBK009",
+          "name":"Black Formal Jacket",
+          "description":"Step up your style game with our trendy Black Formal Jacket. This sleek jacket is crafted from high-quality materials, offering both comfort and sophistication. It features a tailored fit, notched lapels, and a single-breasted design, making it perfect for any formal occasion. The jacket also includes practical pockets and a smooth lining for added comfort. Whether you're heading to a business meeting or a special event, this jacket ensures you look sharp and stylish.",
+          "price":79.99,
+          "category":3,
+          "rating":5.0,
+          "image_url":"/media/black_formal_jacket.jpg",
+          "image":"black_formal_jacket.jpg"
        }
     },
     {
        "pk":10,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002701115",
-          "name":"Reflections Set of 4 Microfiber Napkins",
-          "description":"Complete the look of your table setting with these easy-care microfiber napkins.  great for everyday use or entertaining liquid-resistant design helps protect against spills set of 4 Polyester.Each measures 19x19\". Washable. Imported.",
-          "price":33.99,
-          "category":7,
-          "rating":4.4,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0418201317011949M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0418201317011949M.jpg"
+          "sku":"SHTBLU010",
+          "name":"Blue Shirt",
+          "description":"Enhance your wardrobe with our Blue Formal Shirt. Made from high-quality, breathable fabric, this shirt offers both comfort and style. It features a classic collar, button-down front, and a tailored fit that ensures a sharp, professional look. Perfect for business meetings, formal events, or any occasion where you need to look your best. Pair it with tailored trousers or a suit for a polished appearance.",
+          "price":39.99,
+          "category":3,
+          "rating":4.0,
+          "image_url":"/media/blue_shirt.jpg",
+          "image":"blue_shirt.jpg"
        }
     },
     {
        "pk":11,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002761055",
-          "name":"Chef Designs Black-Trimmed Cook ShirtBig & Tall",
-          "description":"Stylish black-trim cook shirt from Chef Designs is just what you need for a confident, professional presence in the kitchen.  contrasting black stand collar black front buttons left chest pocket short hemmed sleeves squared bottom hem polyester/cotton washable imported of domestic fabric more sizes: regular, big",
+          "sku":"FLTRSBK011",
+          "name":"Black Formal Trousers",
+          "description":"Complete your formal attire with our Black Formal Trousers. These trousers are crafted from high-quality, durable fabric, ensuring both comfort and longevity. They feature a classic fit with a flat front design, providing a sleek and professional look. With practical pockets and a smooth finish, these trousers are perfect for business meetings, formal events, or any occasion where you need to look your best. Pair them with a dress shirt and blazer for a polished ensemble.",
           "price":29.99,
-          "category":9,
-          "rating":3.0,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/0900631B81B0C2D9M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"0900631B81B0C2D9M.jpg"
+          "category":3,
+          "rating":3.5,
+          "image_url":"/media/black_formal_trousers.jpg",
+          "image":"black_formal_trousers.jpg"
        }
     },
     {
        "pk":12,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002820069",
-          "name":"Nike 3-pk. Performance Crew Socks - Boys",
-          "description":"Keep him moving in comfort all day with quality Nike crew socks.  arch support reinforced toe and heel cotton/polyester/spandex washable imported",
-          "price":19.99,
-          "category":1,
-          "rating":4.6,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0510201317010521M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0510201317010521M.jpg"
+          "sku":"FLTRSRD012",
+          "name":"Red Formal Trousers",
+          "description":"Make a bold statement with our Red Formal Trousers. These trousers are crafted from premium, durable fabric, ensuring both comfort and style. They feature a classic fit with a flat front design, providing a sleek and professional look. With practical pockets and a smooth finish, these trousers are perfect for business meetings, formal events, or any occasion where you want to stand out. Pair them with a crisp dress shirt and blazer for a striking ensemble.",
+          "price":29.99,
+          "category":3,
+          "rating":4.5,
+          "image_url":"/media/red_formal_trousers.jpg",
+          "image":"red_formal_trousers.jpg"
        }
     },
     {
        "pk":13,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002820147",
-          "name":"Champion Jersey Tee",
-          "description":"Compete, exercise or simply relax in comfort with a classic tee from Champion, the brand that's been making quality athletic apparel since 1919.  regular fit crewneck taped neck left chest logo embroidery cotton except oxford and granite heather are cotton/polyester washable imported",
-          "price":20.0,
-          "category":9,
-          "rating":3.2,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0430201405053680M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0430201405053680M.jpg"
+          "sku":"FWNKE013",
+          "name":"Nike Air Max 90",
+          "description":"Experience timeless style and comfort with the Nike Air Max 90. Originally designed for performance running, these iconic sneakers feature a visible Air-Sole unit for exceptional cushioning and support. The durable leather and mesh upper provides breathability and a sleek look, while the padded collar and rubber outsole ensure all-day comfort and traction. Perfect for both athletic and casual wear, the Nike Air Max 90 combines classic design with modern functionality.",
+          "price":119.99,
+          "category":4,
+          "rating":5.0,
+          "image_url":"/media/nike_airmax90.jpg",
+          "image":"nike_airmax90.jpg"
        }
     },
     {
        "pk":14,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002910572",
-          "name":"Stafford 4-pk. Blended Cotton A-Shirts",
-          "description":"Stafford Big & Tall ribbed athletic t-shirts deliver the tagless comfort and breathable performance he needs.  super soft, quick-drying, durable fabric preshrunk for lasting fit reinforced durable stitching tag free cotton/polyester washable imported ",
-          "price":26.99,
-          "category":5,
-          "rating":4.7,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/0900631B81C9387BM.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"0900631B81C9387BM.jpg"
+          "sku":"FWNKE014",
+          "name":"Nike Air Max 1",
+          "description":"Discover the iconic Nike Air Max 1, a timeless sneaker that revolutionized the footwear industry. Designed by Tinker Hatfield, this classic shoe features the first-ever visible Air-Sole unit, providing exceptional cushioning and support. The combination of premium materials and a sleek design ensures both comfort and style. Perfect for everyday wear, the Nike Air Max 1 blends heritage with modern performance, making it a must-have for any sneaker enthusiast.",
+          "price":99.99,
+          "category":4,
+          "rating":4.5,
+          "image_url":"/media/nike_airmax1.jpg",
+          "image":"nike_airmax1.jpg"
        }
     },
     {
        "pk":15,
        "model":"products.product",
        "fields":{
-          "sku":"pp5002990740",
-          "name":"Stafford 4-pk. Heavyweight Crewneck T-ShirtsBig & Tall",
-          "description":"Soft and comfortable, two of his favorite things together in this heavyweight cotton tee from Stafford.  combed cotton heavier fabric for durability preshunk for lasting fit premium seaming reduces twisting tag free cotton washable imported",
-          "price":48.99,
-          "category":5,
-          "rating":4.8,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1029201317111469M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1029201317111469M.jpg"
+          "sku":"FWADI015",
+          "name":"Adidas ZX 750",
+          "description":"Step into retro style with the Adidas ZX 750. These classic sneakers feature a blend of breathable mesh and durable suede, offering both comfort and longevity. The EVA foam midsole provides responsive cushioning, while the rubber outsole ensures excellent traction. With its iconic 3-Stripes design and modern updates, the Adidas ZX 750 is perfect for both casual wear and athletic activities. Elevate your sneaker game with this timeless addition to your collection.",
+          "price":89.99,
+          "category":4,
+          "rating":4.0,
+          "image_url":"/media/adidas750.jpg",
+          "image":"adidas750.jpg"
        }
     },
     {
        "pk":16,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003050248",
-          "name":"Levi's 529 Curvy Bootcut Jeans",
-          "description":"Levis 529 curvy bootcut jeans are flattering and perfect for any timeday or night.  sits below the waist slim fit through hip and thigh bootcut leg with 18\" opening smooth bottom 8\" front rise; 15\" back rise cotton/polyester/elastane washable imported misses average: 32\" inseam ",
-          "price":65.99,
-          "category":6,
-          "rating":4.4,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0918201520303373C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0918201520303373C.jpg"
+          "sku":"FWADI016",
+          "name":"Adidas Suede",
+          "description":"Step into classic style with Adidas Suede sneakers. These shoes feature a premium suede upper, offering a luxurious look and feel. The durable construction ensures long-lasting wear, while the cushioned insole provides all-day comfort. With their iconic design and versatile appeal, these sneakers are perfect for both casual outings and stylish streetwear. Elevate your footwear collection with the timeless elegance of adidas Suede Sneakers.",
+          "price":79.99,
+          "category":4,
+          "rating":3.0,
+          "image_url":"/media/adidas_suede.jpg",
+          "image":"adidas_suede.jpg"
        }
     },
     {
        "pk":17,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003070787",
-          "name":"Worthington Essential Short-Sleeve Tee - Plus",
-          "description":"Our stretchy jersey knit tee's gently pleated neckline makes a simply sweet impression.  pleated u-neck short sleeves polyester/spandex washable imported ",
-          "price":33.99,
+          "sku":"NABKTOP017",
+          "name":"Basketball Top",
+          "description":"Show your love for the game with our Basketball T-Shirt. Made from high-quality, breathable fabric, this t-shirt ensures comfort and durability both on and off the court. It features a classic crew neck and a relaxed fit, perfect for casual wear or intense practice sessions. The bold basketball-themed design adds a sporty touch, making it a must-have for any basketball enthusiast.",
+          "price":19.99,
           "category":5,
-          "rating":4.4,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1119201520340305C.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP1119201520340305C.jpg"
+          "rating":2.5,
+          "image_url":"/media/basketball_top.jpeg",
+          "image":"basketball_top.jpg"
        }
     },
     {
        "pk":18,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003090182",
-          "name":"Marvel Comics Avengers Hulk Pillow Buddy",
-          "description":"The Hulk may be tough, but he's actually a real softy. Get to know his softer side with this fun Hulk-shaped pillow.  adds a playful layer of texture and comfort to bed's decor measures 15x9x20\"H Polyester with polyester fill. Spot clean. Imported.",
-          "price":59.99,
-          "category":2,
-          "rating":4.8,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072274M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0807201317072274M.jpg"
+          "sku":"NANFLTOP018",
+          "name":"NFL Top",
+          "description":"Show your team spirit with our NFL Top. Made from high-quality, breathable fabric, this top ensures comfort and durability whether you're at the game or watching from home. It features your favorite team's logo and colors, with a classic fit and crew neck design. Perfect for any football fan, this top is a must-have for game day or casual wear.",
+          "price":49.99,
+          "category":5,
+          "rating":3.5,
+          "image_url":"/media/nfl_top.jpg",
+          "image":"nfl_top.jpg"
        }
     },
     {
        "pk":19,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003090186",
-          "name":"Marvel Spiderman Pillow Buddy",
-          "description":"Now your child can sling webs next to his favorite wall crawler with this Spider-Man pillow buddy. shaped like everyone's favorite web head measures 15x9x20\"H Polyester with polyester fill. Spot clean. Imported.",
-          "price":60.99,
-          "category":2,
-          "rating":5.0,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0807201317072924M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0807201317072924M.jpg"
+          "sku":"NATKSGN019",
+          "name":"Nike Tracksuit",
+          "description":"Elevate your athleisure wardrobe with our Green Nike Tracksuit. Crafted from high-quality, breathable fabric, this tracksuit offers both comfort and durability. The set includes a zip-up jacket with a stand collar and matching pants with an elastic waistband for a secure fit. Perfect for workouts, casual outings, or lounging at home, this tracksuit combines functionality with a stylish, modern look. Experience the perfect blend of performance and style with Nike.",
+          "price":59.99,
+          "category":5,
+          "rating":4.0,
+          "image_url":"/media/nike_tracksuit.jpg",
+          "image":"nike_tracksuit.jpg"
        }
     },
     {
        "pk":20,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003161326",
-          "name":"JCPenney Home Oven Mitt",
-          "description":"Keep it cool in the kitchen with this lined oven mitt.  silicone grip protects hand from heat up to 350F contrast woven houndstooth trim fits comfortably on left or right hand handy hanging tie Sold individually. Cotton with cotton lining. Measures 7x13\". Washable. Imported. ",
-          "price":20.99,
-          "category":7,
-          "rating":4.7,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0821201317103183M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0821201317103183M.jpg"
+          "sku":"NAHDBK020",
+          "name":"Nike Hoodie",
+          "description":"Stay comfortable and stylish with our Black Nike Zip Hoodie. Made from soft, brushed fleece, this hoodie offers lasting comfort and warmth. It features a full-zip front for easy layering, an adjustable drawstring hood for custom coverage, and ribbed cuffs and hem for a secure fit. The iconic Nike Swoosh logo adds a touch of sporty flair, making this hoodie perfect for workouts, casual outings, or lounging at home.",
+          "price":69.99,
+          "category":5,
+          "rating":4.5,
+          "image_url":"/media/nike_zip_hoodie.jpg",
+          "image":"nike_zip_hoodie.jpg"
        }
     },
     {
        "pk":21,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003230723",
-          "name":"Farberware Sonoma 2-qt. Whistling Tea Kettle",
-          "description":"The classic, trusted quality of Farberware pairs nicely with this durable stainless steel teakettle. Gelatin, hot chocolate or a cup of soupthe uses for a teakettle don't stop at tea.  whistle feature signals when water is at a boil removable lid makes kettle easy to fill 2-qt. capacity Stainless steel. Dishwasher safe. Imported. ",
-          "price":60.99,
-          "category":7,
-          "rating":4.3,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/0900631B81D676AEM.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"0900631B81D676AEM.jpg"
+          "sku":"DSLKRTS021",
+          "name":"Lakers Tracksuit",
+          "description":"Show your team pride with our Lakers Tracksuit. This stylish set features the iconic Lakers colors and logo, crafted from high-quality, breathable fabric for ultimate comfort. The jacket includes a full-zip front and stand collar, while the matching pants have an elastic waistband for a secure fit. Perfect for workouts, casual outings, or game day, this tracksuit combines functionality with a bold, sporty look.",
+          "price":24.99,
+          "category":6,
+          "rating":3.5,
+          "image_url":"/media/lakers_tracksuit.jpg",
+          "image":"lakers_tracksuit.jpg"
        }
     },
     {
        "pk":22,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003270936",
-          "name":"Silver Superman Shield Cufflinks",
-          "description":"Superman shield cuff links are a work of art, and a subtle and stylish way to properly honor the man of steel.  one-piece fixed backing featuring the DC Comics logo  x \" rhodium plated metal/enamel imported",
-          "price":76.99,
-          "category":4,
+          "sku":"DSNKECP022",
+          "name":"Nike Cap",
+          "description":"Top off your look with our stylish Nike Cap. Made from high-quality, durable materials, this cap offers both comfort and longevity. It features an adjustable strap for a customizable fit and a classic curved brim for sun protection. The iconic Nike Swoosh logo adds a touch of sporty flair, making it perfect for workouts, casual outings, or everyday wear. Elevate your accessory game with this versatile and timeless piece.",
+          "price":9.99,
+          "category":6,
           "rating":5.0,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP0917201317033820M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP0917201317033820M.jpg"
+          "image_url":"/media/nike_cap.jpg",
+          "image":"nike_cap.jpg"
        }
     },
     {
        "pk":23,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003360384",
-          "name":"Dickies Heavyweight Long-Sleeve Pocket Tee",
-          "description":"When your workday calls for a heavyweight tee, grab this long-sleeve one from Dickies and enjoy industrial-strength comfort from the brand you trust.  chest pocket tagless back neck taped neck and shoulder seams cotton washable imported",
-          "price":29.99,
-          "category":9,
-          "rating":4.8,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0927201317061305M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0927201317061305M.jpg"
+          "sku":"DSNKEDKS023",
+          "name":"Nike Dunks",
+          "description":"Step up your sneaker game with Nike Dunks. These iconic sneakers feature a blend of premium materials and a timeless design, offering both style and comfort. Available in various colorways and styles, including low and high tops, Nike Dunks are perfect for everyday wear. The durable construction and responsive cushioning ensure long-lasting comfort, making them a must-have for any sneaker enthusiast.",
+          "price":49.99,
+          "category":6,
+          "rating":4.0,
+          "image_url":"/media/nike_dunks.jpg",
+          "image":"nike_dunks.jpg"
        }
     },
     {
        "pk":24,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003440111",
-          "name":"Royal Velvet Down Chamber Pillow",
-          "description":"The Down Chamber pillow, with its unique pillow-in-pillow design, offers all-natural comfort. With an inner core of springy, high-loft feathers wrapped in an outer layer of silk, luxurious down, you'll receive supportive, lofty comfort. The gusset allows for additional neck support so you can sleep comfortably. inner chamber of springy, True Loft feathers provides superior all-natural comfort and support outer layer of silky, soft down adds lasting cushioning and comfort 550 fill power 300 thread-count cotton cover is hypoallergenic medium support for stomach or side sleepers hypoallergenic Cotton cover; duck feather and down fill. Washable. Manufacturer's 4-year limited warranty. Assembled in America from imported fabric. Standard/Queen pillow: 20x28\"; 32-ounce fill weight King pillow: 20x36\"; 39-ounce fill weight Be sure to care for your investment with a pillow protector. It's an added layer of protection that willhelpkeep your pillow clean and fresh. ",
-          "price":82.0,
-          "category":2,
-          "rating":3.8,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP1023201317051585M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP1023201317051585M.jpg"
+          "sku":"DSJDNPTS024",
+          "name":"Jordan Pants",
+          "description":"Elevate your athletic wardrobe with our Jordan Pants. Crafted from high-quality, breathable fabric, these pants offer both comfort and durability. They feature a modern fit with an elastic waistband and adjustable drawstring for a secure fit. The iconic Jumpman logo adds a touch of sporty flair, making these pants perfect for workouts, casual outings, or lounging at home. Experience the perfect blend of style and performance with Jordan Pants.",
+          "price":19.99,
+          "category":6,
+          "rating":2.5,
+          "image_url":"/media/jordan_pants.jpg",
+          "image":"jordan_pants.jpg"
        }
     },
     {
