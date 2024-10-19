@@ -9,6 +9,8 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
+    ordering = ('friendly_name',)
+
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
@@ -19,7 +21,8 @@ class ProductAdmin(admin.ModelAdmin):
         'image',
         'sku',
     )
-    ordering = ('sku',)
+
+    ordering = ('category',)
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)
