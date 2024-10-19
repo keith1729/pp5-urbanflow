@@ -340,56 +340,56 @@
        "pk":25,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003540313",
-          "name":"Dickies Heavyweight Fleece Full Zip HoodieBig & Tall",
-          "description":"This soft fleece jacket is a heavyweight champ that works overtime to keep the chill away.  drawcord closure on hood kangaroo pocket rib-knit cuffs and waistband cotton/polyester washable imported",
-          "price":106.99,
-          "category":9,
-          "rating":3.0,
-          "image_url":"http://s7d2.scene7.com/is/image/JCPenney/DP1108201317050996M.tif?wid=65&hei=65&fmt=jpg&op_usm=.4,.8,0,0&resmode=sharp2",
-          "image":"DP1108201317050996M.jpg"
+          "sku":"ADIZX025",
+          "name":"Adidas ZX 750",
+          "description":"Step up your style with the Adidas ZX 750, now available at unbeatable clearance prices! These retro-inspired sneakers feature a mesh upper with suede overlays, a cushioned EVA midsole for all-day comfort, and a durable rubber outsole. Perfect for both casual wear and light workouts, the ZX 750 combines classic design with modern performance. Don't miss out on this limited-time offer to grab your pair at a fraction of the original price!",
+          "price":49.99,
+          "category":7,
+          "rating":4.0,
+          "image_url":"/media/adidas_750.jpg",
+          "image":"adidas_750.jpg"
        }
     },
     {
        "pk":26,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003560513",
-          "name":"JCPenney Home Ashley Scalloped Stoneware 50-pc. Dinnerware Set - Service for 8",
-          "description":"A glossy glaze and scalloped rim add a fun feel to this oversized dinnerware set that includes enough pieces to set the table for everyday dining or a special dinner party.  adds a layer of texture to your place setting generous size is perfect for small or large parties microwave safe service for 8 50-piece set includes: eight 10 dinner plates eight 7 salad plates eight 6 cereal bowls with 22-ounce capacity eight 4 fruit bowls with 8-ounce capacity eight 3 dip bowls with 3-ounce capacity eight 12-ounce mugs one 9 serving bowl with 60-ounce capacity one 8.75x12 serving platter Stoneware. Dishwasher safe. Imported.",
-          "price":241.99,
+          "sku":"TPBLU026",
+          "name":"Button Up Top",
+          "description":"Elevate your wardrobe with this stylish blue button-up top, now available at unbeatable clearance prices! Crafted from high-quality fabric, this versatile top features a classic collar, button-front closure, and a flattering fit. Perfect for both casual and professional settings, it pairs effortlessly with jeans, skirts, or trousers. Don't miss out on this limited-time offer to add a timeless piece to your collection at a fraction of the original price!",
+          "price":19.99,
           "category":7,
-          "rating":4.4,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0219201502115503C.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0219201502115503C.jpg"
+          "rating":3,
+          "image_url":"/media/button_up_top.jpg",
+          "image":"button_up_top.jpg"
        }
     },
     {
        "pk":27,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003560948",
-          "name":"Rachael Ray Porcelain II 10-pc. Cookware Set",
-          "description":"Youll really get cooking with this incredible, hard-enamel cookware set as it contains all the basic pieces to ensure youll get your use out of each and every pan.  heats quickly and evenly, reducing hot spots that can burn foods long-lasting, nonstick cooking surface allows food to release from the pan, making cleanup quick and easy sylish two-tone gradient exterior adds color and style to any kitchen handles are rubberized for comfort, dual-riveted for durability and oven safe to 350F 10-piece set includes: 1-quart saucepan with lid 2-quart saucepad with lid 3-quart saut pan with lid 6-quart stock pot with lid 8\" skillet 10\" skillet Aluminum/porcelain/silicone. Hand wash. Imported.   ",
-          "price":338.99,
+          "sku":"CGOPTS027",
+          "name":"Cargo Pants",
+          "description":"Upgrade your wardrobe with these versatile cargo pants, now available at unbeatable clearance prices! Designed for both style and functionality, these pants feature multiple spacious pockets, durable fabric, and a comfortable fit. Perfect for outdoor adventures or casual everyday wear, they offer the ideal blend of practicality and fashion. Don't miss out on this limited-time offer to grab your pair at a fraction of the original price!",
+          "price":24.99,
           "category":7,
           "rating":5.0,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/DP0610201317080834M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"DP0610201317080834M.jpg"
+          "image_url":"/media/cargo_pants_cl.jpg",
+          "image":"cargo_pants_cl.jpg"
        }
     },
     {
        "pk":28,
        "model":"products.product",
        "fields":{
-          "sku":"pp5003570628",
-          "name":"Hanes 3pk. Cotton Crewneck TShirts  Big & Tall",
-          "description":"This midweight t-shirt from Hanes features ultra-soft cotton for superior comfort you'll reach for everyday.  all-day comfortable fit longer stay-tucked length tagless midweight ComfortSoft cotton fabric cotton washable imported",
-          "price":53.99,
-          "category":4,
-          "rating":4.3,
-          "image_url":"http://s7d9.scene7.com/is/image/JCPenney/0900631B818ABCB9M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-          "image":"0900631B818ABCB9M.jpg"
+          "sku":"JKTFCE028",
+          "name":"Fleece Jacket",
+          "description":"Stay warm and stylish with our fleece jackets, now available at unbeatable clearance prices! These jackets feature soft, insulating fabric, a full-zip front, and convenient pockets for added functionality. Perfect for layering during chilly weather or wearing on its own for a cozy feel. Don't miss out on this limited-time offer to add a versatile and comfortable piece to your wardrobe at a fraction of the original price!",
+          "price":49.99,
+          "category":7,
+          "rating":4.0,
+          "image_url":"/media/fleece_jacket.jpg",
+          "image":"fleece_jacket.jpg"
        }
     }
 ]
