@@ -73,7 +73,14 @@ body {
     background: #fff !important;
 }
 
+/* a.category-badge > span.badge:hover {
+    color: #FF5F1F !important;
+} */
 
+a.category_badge > span.badge:hover {
+    background: #fff !important;
+    color: #212529 !important;
+}
 
 /* -------------------------------- Media Queries */
 

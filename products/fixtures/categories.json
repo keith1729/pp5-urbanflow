@@ -20,7 +20,7 @@
       "pk": 3,
       "model": "products.category",
       "fields": {
-        "name": "formal",
+        "name": "formal_wear",
         "friendly_name": "Formal"
       }
     },
