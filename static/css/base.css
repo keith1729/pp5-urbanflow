@@ -21,7 +21,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    color: #FF5F1F;
+    color: #FF5F1F !important;
 }
 
 .main-logo-link {
@@ -72,10 +72,6 @@ body {
 .bg-white {
     background: #fff !important;
 }
-
-/* a.category-badge > span.badge:hover {
-    color: #FF5F1F !important;
-} */
 
 a.category_badge > span.badge:hover {
     background: #fff !important;

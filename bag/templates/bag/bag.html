@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+  </div>
+</div>
+{% endblock %} 
+
+{% block content %}
+
+{% if bag_items %}
+  <div class="table-responsive rounded">
+    
+  </div>
+{% else %}
+  <p class="lead mb-5 logo-font">Your bag is empty!</p>
+  <a href="{% url 'products' %}" class="logo-font">
+    <span class="icon">
+      <i class="fas fa-chevron-left"></i>
+    </span>
+    <span>Keep Shopping</span>
+  </a>
+{% endif %}
+{% endblock %}
