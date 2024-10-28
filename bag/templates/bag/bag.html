@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -30,11 +31,10 @@
                 <th scope="col">Product Info</th>
                 <th scope="col"></th>
                 <th scope="col">Price</th>
-                <th scope="col">Qty</th>
+                <th scope="col">Quantity</th>
                 <th scope="col">Subtotal</th>
               </tr>
             </thead>
-
             {% for item in bag_items %}
               <tr>
                 <td class="p-3 w-25">
@@ -90,14 +90,14 @@
                       {% endif %}
                     </div>
                   </form>
-                  <a class="update-link text-info"><small>Update</small></a>
+                  <a class="update-link text-info"><small>Add Quantity</small></a>
                   <a class="remove-item text-danger float-end" 
                      id="remove_{{ item.item_id }}" 
-                     data-product_size="{{ item.size }}"><small>Remove</small>
+                     data-product_size="{{ item.size }}"><small>Remove All</small>
                   </a>
                 </td>
                 <td class="py-3">
-                  <p class="my-0">€{{ item.product.price }}</p>
+                  <p class="my-0">€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </td>
               </tr>
             {% endfor %}
@@ -148,9 +148,8 @@
 {% block postload_js %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
-
 <script type="text/javascript">
-  // Update quantity on click
+  // Add quantity on click
   $('.update-link').click(function(e) {
       var form = $(this).prev('.update-form');
       form.submit();

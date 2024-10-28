@@ -56,8 +56,8 @@
           {% csrf_token %}
           <div class="row">
             <!-- Clothes sizes -->
-            {% with product.has_sizes_clothes as s %}
-              {% if s %}
+            {% with product.has_sizes_clothes as x %}
+              {% if x %}
                 <div class="col-12">
                   <p><strong>Size:</strong></p>
                   <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
@@ -71,8 +71,8 @@
               {% endif %}  
             {% endwith %}
             <!-- Footwear sizes -->
-            {% with product.has_sizes_shoes as s %}
-              {% if s %}
+            {% with product.has_sizes_shoes as y %}
+              {% if y %}
                 <div class="col-12">
                   <p><strong>Size:</strong></p>
                   <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
