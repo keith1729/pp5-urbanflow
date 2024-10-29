@@ -94,6 +94,8 @@ TEMPLATES = [
     },
 ]
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+
 AUTHENTICATION_BACKENDS = (
     'django.contrib.auth.backends.ModelBackend', # Default backend for username/password login
     'allauth.account.auth_backends.AuthenticationBackend', # Allauth backend for email and social login 
