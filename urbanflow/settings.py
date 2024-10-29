@@ -12,6 +12,23 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+import dj_database_url
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Get the DATABASE_URL environment variable
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+# Configure the DATABASES setting
+DATABASES = {
+    'default': dj_database_url.config(
+        default=DATABASE_URL,
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +37,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jy7bv^o*2==nu4*k2e08x#896=8&%2(a=dkhic-n&pv-07m*-y'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -99,12 +116,12 @@ WSGI_APPLICATION = 'urbanflow.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
