@@ -25,9 +25,9 @@ def add_to_bag(request, item_id):
             bag[item_id]['items_by_size'][size] = quantity
     else:
         bag[item_id] = {'items_by_size': {size: quantity}}
-    messages.success(request, f'Added {product.name} size {size.upper()} to your bag')
 
     request.session['bag'] = bag
+    messages.success(request, f'Added {product.name} size {size.upper()} to your bag')
     return redirect(redirect_url)
 
 def adjust_bag(request, item_id):
