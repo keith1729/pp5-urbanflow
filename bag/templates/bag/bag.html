@@ -42,7 +42,7 @@
                 </td>
                 <td class="py-3">
                   <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                  <p class="my-0"></p>
+                  <p class="my-0">
                     <strong>Size: </strong>
                     {% if item.product.has_sizes_clothes or item.product.has_sizes_shoes %}
                       {{ item.size|upper }}
@@ -121,7 +121,7 @@
                   </span>
                   <span class="logo-font">Keep Shopping</span>
                 </a>
-                <a href="" class="btn btn-outline-white rounded-0 btn-lg">
+                <a href="{% url 'checkout' %}" class="btn btn-outline-white rounded-0 btn-lg">
                   <span class="logo-font">Secure Checkout</span>
                   <span class="icon">
                     <i class="fas fa-lock"></i>
