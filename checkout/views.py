@@ -10,7 +10,7 @@ import stripe
 # Create your views here.
 
 def checkout(request):
-    """ A view to show the order form """
+    """ A view to show the checkout """
 
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
@@ -18,16 +18,16 @@ def checkout(request):
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
-        form_data = {
-            'full_name': request.POST['full_name'],
-            'email': request.POST['email'],
-            'phone_number': request.POST['phone_number'],
-            'street_address1': request.POST['street_address1'],
-            'street_address2': request.POST['street_address2'],
-            'town_city': request.POST['town_city'],
-            'county': request.POST['county'],
-            'country': request.POST['country'],
-        }
+        form_data = { 
+            'full_name': request.POST.get('full_name', ''), 
+            'email': request.POST.get('email', ''), 
+            'phone_number': request.POST.get('phone_number', ''), 
+            'street_address1': request.POST.get('street_address1', ''), 
+            'street_address2': request.POST.get('street_address2', ''), 
+            'town_or_city': request.POST.get('town_or_city', ''), 
+            'county': request.POST.get('county', ''), 
+            'country': request.POST.get('country', ''), 
+            }
 
         order_form = OrderForm(form_data)
         if order_form.is_valid():
@@ -46,7 +46,7 @@ def checkout(request):
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
-                        "Please call us for assistance!")
+                        "Please contact us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
@@ -55,7 +55,7 @@ def checkout(request):
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
-                Please double check your information.')
+                Please check your information.')
     else:
         bag = request.session.get('bag', {})
         if not bag:
@@ -81,7 +81,7 @@ def checkout(request):
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
-        'client_secret': intent.client_secret,
+        'client_secret': intent.client_secret if request.method == 'GET' else '',
     }
 
     return render(request, template, context)
