@@ -38,7 +38,6 @@ card.addEventListener('change', function (event) {
             </span>
             <span>${event.error.message}</span>
         `;
-
         $(errorDiv).html(html);
     } else {
         errorDiv.textContent = '';
@@ -46,31 +45,34 @@ card.addEventListener('change', function (event) {
 })
 
 // Handle form submit
-var form = document.getElementById('payment-form');
-
+var form = document.getElementById('payment_form'); 
+console.log('Form element:', form); // Debugging line 
 form.addEventListener('submit', function(ev) {
-    ev.preventDefault();
-    card.update({ 'disabled': true});
-    $('#submit-button').attr('disabled', true);
-    stripe.confirmCardPayment(clientSecret, {
-        payment_method: {
-            card: card,
-        }
-    }).then(function(result) {
-        if (result.error) {
-            var errorDiv = document.getElementById('card-errors');
-            var html = `
-                <span class="icon" role="alert">
-                <i class="fas fa-times"></i>
-                </span>
-                <span>${result.error.message}</span>`;
-            $(errorDiv).html(html);
-            card.update({ 'disabled': false});
-            $('#submit-button').attr('disabled', false);
-        } else {
-            if (result.paymentIntent.status === 'succeeded') {
-                form.submit();
-            }
-        }
-    });
+    ev.preventDefault(); console.log('Form submitted'); // Debugging line 
+    card.update({ 'disabled': true }); 
+    $('#submit-button').attr('disabled', true); 
+    $('#payment_form').fadeToggle(100); 
+    $('#loading-overlay').fadeToggle(100); // Ensure this line is called 
+    stripe.confirmCardPayment(clientSecret, { 
+        payment_method: { 
+            card: card, 
+        } 
+    }).then(function(result) { 
+        if (result.error) { 
+            var errorDiv = document.getElementById('card-errors'); 
+            var html = ` 
+            <span class="icon" role="alert"> 
+            <i class="fas fa-times"></i> 
+            </span> <span>${result.error.message}</span>`; 
+            $(errorDiv).html(html); 
+            $('#payment_form').fadeToggle(100); 
+            $('#loading-overlay').fadeToggle(100); // Ensure this line is called 
+            card.update({ 'disabled': false }); 
+            $('#submit-button').attr('disabled', false); 
+        } else { 
+            if (result.paymentIntent.status === 'succeeded') { 
+                form.submit(); 
+            } 
+        } 
+    }); 
 });
