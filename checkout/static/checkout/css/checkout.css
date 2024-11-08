@@ -36,9 +36,19 @@
 } */
 
 #payment_form .form-control,
-#payment_form #card-element {
+#card-element {
     color: #000 !important;
     border: 1px solid #000 !important;
+}
+
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
 }
 
 #loading-overlay {
