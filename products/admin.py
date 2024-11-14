@@ -4,6 +4,7 @@ from .models import Category, Product
 # Register your models here.
 
 class CategoryAdmin(admin.ModelAdmin):
+
     list_display = (
         'friendly_name',
         'name',
@@ -13,6 +14,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class ProductAdmin(admin.ModelAdmin):
+
     list_display = (
         'name',
         'category',
@@ -23,6 +25,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
 
     ordering = ('category',)
+
 
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Product, ProductAdmin)

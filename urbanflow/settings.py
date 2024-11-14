@@ -18,18 +18,6 @@ import dj_database_url
 # Load environment variables from the .env file
 load_dotenv()
 
-# Get the DATABASE_URL environment variable
-DATABASE_URL = os.getenv('DATABASE_URL')
-
-# Configure the DATABASES setting
-DATABASES = {
-    'default': dj_database_url.config(
-        default=DATABASE_URL,
-        conn_max_age=600,
-        conn_health_checks=True,
-    )
-}
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -42,9 +30,11 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net']
+ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', '.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',  "https://*.herokuapp.com",
+    ]
 
 # Application definition
 
@@ -67,6 +57,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'django_countries',
     'profiles',
+    'likedislike',
 ]
 
 MIDDLEWARE = [
@@ -127,6 +118,18 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'urbanflow.wsgi.application'
 
+# Get the DATABASE_URL environment variable
+DATABASE_URL = os.getenv('DATABASE_URL')
+
+# Configure the DATABASES setting
+DATABASES = {
+    'default': dj_database_url.config(
+        default=DATABASE_URL,
+        conn_max_age=600,
+        conn_health_checks=True,
+    )
+}
+
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -171,6 +174,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'

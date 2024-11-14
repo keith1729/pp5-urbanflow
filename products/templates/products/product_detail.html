@@ -51,6 +51,23 @@
         {% else %}
           <small class="text-primary">No Rating</small>
         {% endif %}
+
+        <!-- Like and Dislike Buttons --> 
+        <div class="like-dislike-container mt-2"> 
+          <form action="{% url 'like_product' product.id %}" method="post" class="d-inline"> 
+            {% csrf_token %} 
+            <button type="submit" class="btn btn-outline-success"> 
+              <i class="fas fa-thumbs-up"></i> {{ product.likes_count }} 
+            </button> 
+          </form> 
+          <form action="{% url 'dislike_product' product.id %}" method="post" class="d-inline"> 
+            {% csrf_token %} 
+            <button type="submit" class="btn btn-outline-danger"> 
+              <i class="fas fa-thumbs-down"></i> {{ product.dislikes_count }} 
+            </button> 
+          </form> 
+        </div>
+
         {% if request.user.is_superuser %}
           <small class="ms-3">
             <a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a> | 
