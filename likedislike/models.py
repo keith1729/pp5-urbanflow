@@ -22,3 +22,6 @@ class LikeDislike(models.Model):
     class Meta: 
         """ Meta class to define unique constraints for the LikeDislike model """
         unique_together = ('user', 'product', 'vote')
+    
+    class Meta:
+        verbose_name_plural = 'Likes and Dislikes'

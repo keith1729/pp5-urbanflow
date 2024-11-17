@@ -51,25 +51,44 @@
         {% else %}
           <small class="text-primary">No Rating</small>
         {% endif %}
-
         <!-- Like and Dislike Buttons --> 
-        <div class="like-dislike-container mt-2"> 
+        <div class="mt-2"> 
           <form action="{% url 'like_product' product.id %}" method="post" class="d-inline"> 
             {% csrf_token %} 
-            <button type="submit" class="btn btn-outline-success"> 
+            <button type="submit" class="btn btn-outline-success rounded-0"> 
               <i class="fas fa-thumbs-up"></i> {{ product.likes_count }} 
             </button> 
           </form> 
           <form action="{% url 'dislike_product' product.id %}" method="post" class="d-inline"> 
             {% csrf_token %} 
-            <button type="submit" class="btn btn-outline-danger"> 
+            <button type="submit" class="btn btn-outline-danger rounded-0"> 
               <i class="fas fa-thumbs-down"></i> {{ product.dislikes_count }} 
             </button> 
           </form> 
         </div>
-
+        <!-- Wishlist Buttons --> 
+        <div class="mt-2"> 
+          {% if user.is_authenticated %} 
+            {% if product.id in user_wishlist %} 
+              <form action="{% url 'remove_from_wishlist' product.id %}" method="post"> 
+                {% csrf_token %} 
+                <button type="submit" class="btn btn-outline-danger rounded-0"> 
+                  <i class="fas fa-heart-broken"></i> Remove from Wishlist 
+                </button> 
+              </form> 
+            {% else %} 
+              <form action="{% url 'add_to_wishlist' product.id %}" method="post"> 
+                {% csrf_token %} 
+                <button type="submit" class="btn btn-outline-success rounded-0"> 
+                  <i class="fas fa-heart"></i> Add to Wishlist 
+                </button> 
+              </form> 
+            {% endif %} 
+          {% endif %} 
+        </div>
         {% if request.user.is_superuser %}
-          <small class="ms-3">
+          <br>
+          <small>
             <a class="text-info" href="{% url 'edit_product' product.id %}">Edit</a> | 
             <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
           </small>

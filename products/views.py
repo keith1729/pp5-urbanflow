@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
+from wishlist.models import Wishlist
 
 # Create your views here.
 
@@ -56,14 +57,17 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-def product_detail(request, product_id):
-    """ A view to show a specific product details """
-
-    product = get_object_or_404(Product, pk=product_id)
-    context = {
-        'product': product,
-    }
-
+@login_required 
+def product_detail(request, product_id): 
+    """ A view to show a specific product details """ 
+    
+    product = get_object_or_404(Product, pk=product_id) 
+    user_wishlist = Wishlist.objects.filter(user=request.user).values_list('product', flat=True) 
+    context = { 
+        'product': product, 
+        'user_wishlist': user_wishlist, 
+        } 
+        
     return render(request, 'products/product_detail.html', context)
 
 @login_required
