@@ -17,16 +17,16 @@
 
 {% block content %}
 <div class="container-fluid">
-  <div class="row"></div>
+  <div class="row">
     <div class="col text-center mt-3">
       <h2 class="logo-font">My Profile</h2>
-      <hr class="mb-1">
+      <hr class="mb-3">
     </div>
   </div>
   <div class="row">
     <div class="col-12 col-lg-6">
-      <p class="text-primary">Default Delivery Information</p>
-      <form action="{% url 'profile' %}" class="mt-3" method="POST" id="profile-update-form">
+      <p class="text-primary ms-3">Default Delivery Information</p>
+      <form action="{% url 'profile' %}" class="mt-3 ms-3" method="POST" id="profile-update-form">
         {% csrf_token %}
         {{ form|crispy }}
         <button class="btn btn-outline-white rounded-0 float-end">Update Information</button>
