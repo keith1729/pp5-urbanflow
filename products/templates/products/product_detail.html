@@ -14,6 +14,7 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row">
+    <hr class="mb-3">
     <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
       <div class="image-container my-5">
         {% if product.image %}
@@ -34,6 +35,20 @@
           </a>
         {% endif %}
       </div>
+      <!-- Product reviews -->
+      <h3 class="text-primary">Reviews</h3> 
+      <hr class="mb-3">
+      <ul> 
+        {% for review in reviews %} 
+          <li> 
+            <strong>{{ review.user.username }}</strong> - {{ review.rating }} / 5 
+            <p>{{ review.comment }}</p> 
+            <small>{{ review.date_added }}</small> 
+          </li> 
+          <br>
+        {% endfor %} 
+      </ul> 
+      <a href="{% url 'add_review' product.id %}" class="btn btn-primary rounded-0 mb-3">Add a Review</a>
     </div>
     <div class="col-12 col-md-6 col-lg-4">
       <div class="product-details-container mb-5 mt-md-5">

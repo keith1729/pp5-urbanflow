@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col">
+
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col text-center mt-3">
+      <h2 class="logo-font">Add a Review for {{ product.name }}</h2>
+      <hr class="mb-3">
+    </div>
+  </div>
+  <div class="row">
+    <div class="review-container col-10 offset-1">
+      <form method="post"> 
+        {% csrf_token %} 
+        {{ form|crispy }} 
+        <button type="submit" class="btn btn-primary rounded-0">Submit Review</button> 
+      </form> 
+    </div>
+  </div>
+</div>
+{% endblock %}
+

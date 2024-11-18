@@ -6,6 +6,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 from wishlist.models import Wishlist
+from reviews.models import Review
 
 # Create your views here.
 
@@ -63,9 +64,11 @@ def product_detail(request, product_id):
     
     product = get_object_or_404(Product, pk=product_id) 
     user_wishlist = Wishlist.objects.filter(user=request.user).values_list('product', flat=True) 
+    reviews = Review.objects.filter(product=product)
     context = { 
         'product': product, 
         'user_wishlist': user_wishlist, 
+        'reviews': reviews,
         } 
         
     return render(request, 'products/product_detail.html', context)
