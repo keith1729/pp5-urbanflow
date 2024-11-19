@@ -11,4 +11,4 @@ def index(request):
 def custom_404(request, exception): 
     """ View for 404 error page """
     
-    return render(request, '404.html', status=404)
+    return render(request, 'templates/404.html', status=404)
