@@ -17,16 +17,15 @@
     <div class="carousel-inner"> 
       {% for product in products %} 
         <div class="carousel-item {% if forloop.first %}active{% endif %}"> 
-          <a href="{% url 'product_detail' product.id %}">
+          <a href="{% url 'product_detail' product.id %}"> 
             <img src="{{ product.image.url }}" class="img-fluid d-block mx-auto" alt="{{ product.name }}" style="max-height: 500px; object-fit: cover;"> 
-          </a>
-          <div class="carousel-caption d-none d-md-block logo-font"> 
-            <h5>{{ product.name }}</h5> 
-            <!-- <p>{{ product.description }}</p>  -->
-            <p class="fw-bold">€{{ product.price }}</p>
+          </a> 
+          <div class="carousel-caption d-md-block logo-font"> 
+            <h5>{{ product.name }}</h5>  
+            <p class="fw-bold">€{{ product.price }}</p> 
           </div> 
         </div> 
-      {% endfor %} 
+      {% endfor %}
     </div> 
     <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev"> 
       <span class="carousel-control-prev-icon" aria-hidden="true"></span> 

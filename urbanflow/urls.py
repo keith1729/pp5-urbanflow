@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from home.views import custom_404
+
+handler404 = 'home.views.custom_404'
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,4 +33,4 @@ urlpatterns = [
     path('likedislike/', include('likedislike.urls')),
     path('wishlist/', include('wishlist.urls')),
     path('reviews/', include('reviews.urls')),
-    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )
