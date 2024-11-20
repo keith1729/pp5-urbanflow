@@ -12,7 +12,7 @@
 {% endblock %} 
 
 {% block content %}
-<div class="container mt-5"> 
+<div class="container mt-3"> 
   <div id="productCarousel" class="carousel slide" data-bs-ride="carousel"> 
     <div class="carousel-inner"> 
       {% for product in products %} 
@@ -20,7 +20,7 @@
           <a href="{% url 'product_detail' product.id %}"> 
             <img src="{{ product.image.url }}" class="img-fluid d-block mx-auto" alt="{{ product.name }}" style="max-height: 500px; object-fit: cover;"> 
           </a> 
-          <div class="carousel-caption d-md-block logo-font"> 
+          <div class="carousel-caption d-md-block text-primary"> 
             <h5>{{ product.name }}</h5>  
             <p class="fw-bold">€{{ product.price }}</p> 
           </div> 

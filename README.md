@@ -1,131 +1,151 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Urban Flow
 
-Welcome Keith O'Donoghue,
+Welcome to Urban Flow – a dynamic and user-friendly Django-based e-commerce platform tailored to urban fashion enthusiasts. Our project aims to streamline the process of discovering, purchasing, and learning about the latest trends in urban clothing and footwear. With a sleek, modern interface and robust back-end functionality, Urban Flow provides a seamless shopping experience for both trendsetters and fashion aficionados.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents:
+1. UX-Design
+    - Planning 
+        - Agile approach
+        - User Stories
+    - WireFrames
+    - Fonts
+    - Colours
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+2. Database Schema
+    - ERD
 
-## Gitpod Reminders
+3. Features
+    - Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+4. Technologies Used
+    - Languages, libraries and frameworks
+    - Tools
 
-`python3 -m http.server`
+5. Manual Testing
+    - Code Validation
+    - Features
 
-A blue button should appear to click: _Make Public_,
+6. Deployment
+    - Heroku
 
-Another blue button should appear to click: _Open Browser_.
+## UX-Design
+Urban Flow delivers an intuitive and engaging shopping experience for urban fashion enthusiasts. Upon landing on the homepage, users are greeted with a sleek, modern interface that reflects the dynamic nature of urban culture. The navigation is straightforward, allowing users to effortlessly browse through a collection of clothing and footwear.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- Planning
+    - Agile approach:
+Adopted an Agile approach to manage the project efficiently. This methodology allows for iterative development, continuous feedback, and flexibility to adapt to changes. By breaking the project into smaller, manageable tasks, we can deliver incremental improvements and ensure a high-quality end product.
 
-A blue button should appear to click: _Make Public_,
+    - User Stories: 
+User stories are a key component of our Agile approach. They describe the features and functionalities from the user's perspective, ensuring that the project meets the users' needs. Each user story includes acceptance criteria to define the conditions for successful implementation. This helps in maintaining a user-centric focus throughout the development process.
 
-Another blue button should appear to click: _Open Browser_.
+- WireFrames
+    - Home page
+    <img src="assets/images/homepage.png" alt="Wireframes Home">
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    - Products page
+    <img src="assets/images/productspage.png" alt="Wireframes Products">
 
-To log into the Heroku toolbelt CLI:
+    - Product detail page
+    <img src="assets/images/productdetail.png" alt="Wireframes Product Detail">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+    - Profile page
+    <img src="assets/images/profilepage.png" alt="Wireframes Profile">
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+- Fonts
 
-### Connecting your Mongo database
+Urban Flow uses the Oswald font to provide a modern and clean aesthetic that complements the contemporary urban fashion showcased on the site. The Oswald font is known for its readability and style, enhancing the overall user experience by ensuring that all text elements are both visually appealing and easy to read.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+- Colours
 
-------
+The color palette for Urban Flow consists of black, white, orange, and blue, creating a vibrant and dynamic visual identity. Each color plays a specific role in the design:
 
-## Release History
+Black: Used for the background, providing a sleek and elegant contrast.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+White: Serves as the primary colour for forms and tables, ensuring clarity and readability.
 
-**June 18, 2024,** Add Mongo back into template
+Orange: Accentuates call-to-action buttons and highlights, adding energy and a sense of urgency.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+Blue: Adds a touch of cool sophistication and is used for links and interactive elements to guide user interactions.
 
-**May 28 2024:** Fix Mongo and Links installs
+Together, these colors create a cohesive and engaging visual experience that reflects the urban, stylish nature of the platform.
 
-**April 26 2024:** Update node version to 16
+## Database
 
-**September 20 2023:** Update Python version to 3.9.17.
+- Schema
+<img src="assets/images/erds.png" alt="Erd">
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Features
+- Existing features
+    
+    - Header
+    <img src="assets/images/header.png" alt="Features header">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    - Footer
+    <img src="assets/images/footer.png" alt="Features footer">
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    - User dropdown
+    
+    <img src="assets/images/userDropdown.png" alt="Features user dropdown">
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    - Shopping bag
+    <img src="assets/images/shoppingBag.png" alt="Features shopping bag">
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+    - Checkout
+    <img src="assets/images/checkout.png" alt="Features checkout">
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+    - Product management
+    <img src="assets/images/productManagement.png" alt="Features product management">
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    - Wishlist
+    <img src="assets/images/wishlist.png" alt="Features wishlist">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    - Profile
+    <img src="assets/images/profile.png" alt="Features profile">
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+    - Reviews
+    <img src="assets/images/reviews.png" alt="Features reviews">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies Used
+Urban Flow is built using a robust and modern tech stack to ensure a seamless and efficient e-commerce experience. The main technologies used in this project are:
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+HTML: Provides the structure of the web pages, ensuring that content is well-organized and accessible.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+CSS: Styles the HTML elements to create a visually appealing layout and enhance user experience.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+JavaScript: Adds interactivity and dynamic content to the website, enabling a smooth and responsive user interface.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Bootstrap 5: A powerful front-end framework that simplifies the design process with pre-built components and responsive layout options.
 
-------
+Python: The core programming language used for developing the back-end logic, ensuring efficient and maintainable code.
 
-## FAQ about the uptime script
+Django: A high-level Python web framework that promotes rapid development and clean, pragmatic design, enabling robust back-end functionality and secure web applications.
 
-**Why have you added this script?**
+By leveraging these technologies, Urban Flow delivers a modern, dynamic, and user-friendly e-commerce platform tailored to the needs of urban fashion enthusiasts.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+- Tools
 
-**How will this affect me?**
+PostgreSQL was used for its relational database management system.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Github for version control and storing the projects code.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Balsamiq for design wireframes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Manual Testing
 
-**So….?**
+- Code validation
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+HTML passes through W3C validation service with no major errors.
 
-**Can I opt out?**
+CSS passes through W3C validation service.
+<img src="assets/images/cssValidation.png" alt="CSS validation">
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+JS passes through JSHint ok.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Python passes through the code institute linter validator, showing only that some of the lines were too long.
 
-**Anything more?**
+- Features
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+All the sites features were extensively tested and work as expected.
 
----
 
-Happy coding!
+

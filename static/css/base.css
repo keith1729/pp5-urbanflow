@@ -255,10 +255,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-.footer {
-    background-color: #000;
-}
-
 .social-links a { 
     text-decoration: none; 
 }
