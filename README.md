@@ -28,6 +28,12 @@ Welcome to Urban Flow – a dynamic and user-friendly Django-based e-commerce pl
 6. Deployment
     - Heroku
 
+7. SEO
+    - Sitemap
+    - Robots.txt
+
+8. Buisness Model
+
 ## UX-Design
 Urban Flow delivers an intuitive and engaging shopping experience for urban fashion enthusiasts. Upon landing on the homepage, users are greeted with a sleek, modern interface that reflects the dynamic nature of urban culture. The navigation is straightforward, allowing users to effortlessly browse through a collection of clothing and footwear.
 
@@ -147,5 +153,56 @@ Python passes through the code institute linter validator, showing only that som
 
 All the sites features were extensively tested and work as expected.
 
+## SEO
 
+- Sitemap
 
+To enhance the SEO of Urban Flow e-commerce website, creating a sitemap is essential. This will help search engines better index the site and improve its visibility in search results.
+
+- Robots
+
+The robots.txt file is used to manage and control the behavior of search engine crawlers. It helps prevent certain parts of a website from being indexed, ensuring that only relevant content is visible in search engine results.
+
+## Buisness Model
+
+- Facebook page
+
+<img src="static/images/fb0.png" alt="Facebook">
+<img src="static/images/fb1.png" alt="Facebook">
+<img src="static/images/fb2.png" alt="Facebook">
+
+Business Type: B2C E-commerce Online Store
+
+Mission Statement: Urban Flow aims to provide a seamless and enjoyable online shopping experience by offering a curated selection of high-quality urban fashion and lifestyle products. Our mission is to empower individuals to express their unique style and personality through our diverse range of products.
+
+Value Proposition:
+
+Curated Selection: We offer a carefully curated selection of trendy and high-quality urban fashion and lifestyle products.
+
+User Experience: Our user-friendly website ensures a smooth and enjoyable shopping experience.
+
+Customer Service: We prioritize excellent customer service, providing prompt and helpful support to our customers.
+
+Fast Delivery: We offer fast and reliable delivery services to ensure our customers receive their orders promptly.
+
+Revenue Streams:
+
+Product Sales: Revenue generated from the sale of fashion and lifestyle products.
+
+Membership Fees: Optional membership plans offering exclusive discounts and early access to new collections.
+
+Affiliate Marketing: Partnering with influencers and bloggers to promote our products and earn commissions on sales.
+
+Target Market:
+
+Demographics: Urban Flow targets fashion-forward individuals aged 18-35 who are interested in urban fashion and lifestyle products.
+
+Geographics: Primarily focusing on urban areas with a high concentration of young professionals and students.
+
+Psychographics: Customers who value style, quality, and convenience in their shopping experience.
+
+Marketing Strategy:
+
+Social Media Marketing: Utilizing platforms Facebook to reach and engage with our target audience.
+
+By following this business model, Urban Flow aims to establish itself as a leading e-commerce platform for urban fashion and lifestyle products, delivering exceptional value and experience to our customers.
