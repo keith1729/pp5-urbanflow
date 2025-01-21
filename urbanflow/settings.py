@@ -29,12 +29,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', '8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',  "https://*.herokuapp.com",
+    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', 'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', 'https://*.herokuapp.com',
     ]
 
 # Application definition
