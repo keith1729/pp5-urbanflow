@@ -29,12 +29,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', '8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', '8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net', '8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', '.herokuapp.com']
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', 'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', 'https://*.herokuapp.com',
+    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', 'https://8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net', 'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', 'https://*.herokuapp.com',
     ]
 
 # Application definition
@@ -76,6 +76,14 @@ MIDDLEWARE = [
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_REGION_NAME = os.getenv('AWS_S3_REGION_NAME')
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/'
 
 ROOT_URLCONF = 'urbanflow.urls'
 
