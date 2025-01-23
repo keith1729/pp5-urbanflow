@@ -1,1 +1,1 @@
-web: gunicorn urbanflow.wsgi
+web: gunicorn urbanflow.wsgi:application
