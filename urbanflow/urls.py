@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import custom404
+from .views import custom404, custom500
 
 
 urlpatterns = [
@@ -35,3 +35,5 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )
 
 handler404 = 'urbanflow.views.custom404'
+handler500 = 'urbanflow.views.custom500'
+
