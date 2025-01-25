@@ -8,12 +8,12 @@ def newsletter_signup(request):
     """ View to render sign up form """
 
     if request.method == 'POST':
-        form = SubscriberForm(request.POST)
+        form = SubscriberForm(request.POST, user_email=request.user.email)
         if form.is_valid():
             form.save()
             return redirect('newsletter_thank_you')
     else:
-        form = SubscriberForm()
+        form = SubscriberForm(user_email=request.user.email)
     return render(request, 'newsletter_signup.html', {'form': form})
 
 def newsletter_thank_you(request):
