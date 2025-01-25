@@ -38,6 +38,8 @@
         <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
       {% endif %}
       <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+      <a href="{% url 'wishlist' %}" class="dropdown-item">Wishlist</a>
+      <a href="{% url 'newsletter_signup' %}" class="dropdown-item">Newsletter</a>
       <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
     {% else %}
       <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -61,3 +63,9 @@
     </div>
   </a>
 </li>
+<div class="d-block d-lg-none w-100 text-center text-white">
+  <hr>
+  <a class="logo-font nav-link" href="{% url 'home' %}">
+    <h2><strong>urban<em>Flow</em></strong></h2>
+  </a>
+</div>
