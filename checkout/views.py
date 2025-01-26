@@ -169,7 +169,7 @@ def checkout_success(request, order_number):
                 user_profile_form.save()
 
     # Send confirmation email
-    send_confirmation_email(order.email)
+    send_confirmation_email(order.email, order_number)
 
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
@@ -186,13 +186,20 @@ def checkout_success(request, order_number):
     return render(request, template, context)
 
 
-def send_confirmation_email(user_email):
+def send_confirmation_email(user_email, order_number):
     """ Order confirmation email """
+    subject = 'Purchase Confirmation'
+    message = (
+        f'Thanks for your purchase! '
+        f'Order #{order_number} is being processed.'
+    )
+    from_email = 'keithurbanflow@gmail.com'
+    recipient_list = [user_email]
 
     send_mail(
-        'Purchase Confirmation',
-        'Thank you for your purchase! Your order is being processed.',
-        'keithurbanflow@gmail.com',
-        [user_email],
+        subject,
+        message,
+        from_email,
+        recipient_list,
         fail_silently=False,
     )

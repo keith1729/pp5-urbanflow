@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 import dj_database_url
-# import django_heroku
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -29,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     '8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',
@@ -44,8 +43,6 @@ CSRF_TRUSTED_ORIGINS = [
     'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io',
     'https://*.herokuapp.com'
 ]
-
-# Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -219,7 +216,7 @@ STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
-
+# Email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
@@ -227,5 +224,3 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASS')
 DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
-
-# DEFAULT_FROM_EMAIL = 'urbanflow@example.com'
