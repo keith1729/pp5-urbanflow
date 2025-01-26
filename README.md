@@ -151,7 +151,21 @@ Python passes through the code institute linter validator, showing only that som
 
 - Features
 
-All the sites features were extensively tested and work as expected.
+<!-- All the sites features were extensively tested and work as expected. -->
+
+## Manual Testing
+
+|Feature:|Expected Outcome:| Actual Outcome:|
+|--------|-----------------|----------------|
+|User Registration|Users should be able to register with a valid email and password|Users can register successfully|
+|Verify Registration|Users should recieve a verification email for registration|Users recieve a verification email to verify email|
+|User Login|Registered users should be able to log in with their credentials|Registered users can log in successfully|
+|User logout|Logged in users should be able to log out successfully|Logged in users can logout successfully|
+|Product Page Access|Non-logged-in users should be able to browse the product page|Non-logged-in users can browse the product page|
+|Product Detail Access|Non-logged-in users should be prompted to sign in when accessing product details|Non-logged-in users are prompted to sign in when accessing product details|
+|Add to Shopping Bag|Logged-in users should be able to add products to their shopping bag|Logged-in users can add products to their shopping bag successfully|
+|Checkout Process|Users should be able to complete the checkout process and receive a confirmation email|Users can complete the checkout process and receive a confirmation email|
+|
 
 ## SEO
 
