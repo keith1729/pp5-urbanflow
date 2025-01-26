@@ -17,7 +17,9 @@ class SubscriberForm(forms.ModelForm):
         if user_email:
             self.fields['email'].initial = user_email
             self.fields['email'].widget.attrs['readonly'] = True
-            self.fields['email'].widget.attrs['class'] = 'form-control rounded-0'
+            self.fields['email'].widget.attrs['class'] = (
+                'form-control rounded-0'
+            )
         self.helper = FormHelper()
         self.helper.form_method = 'post'
         self.helper.layout = Layout(

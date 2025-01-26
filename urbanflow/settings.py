@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 import dj_database_url
-import django_heroku
+# import django_heroku
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -31,11 +31,19 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', '8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net', '8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',
+    '8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net',
+    '8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io',
+    '.herokuapp.com'
+]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net', 'https://8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net', 'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io', 'https://*.herokuapp.com',
-    ]
+    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',
+    'https://8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net',
+    'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io',
+    'https://*.herokuapp.com'
+]
 
 # Application definition
 
@@ -46,7 +54,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites', # Required for allauth
+    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -76,10 +84,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'allauth.account.middleware.AccountMiddleware',
 ]
-
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
@@ -126,7 +130,7 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request', # Required by allauth
+                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media',
@@ -145,8 +149,8 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 WSGI_APPLICATION = 'urbanflow.wsgi.application'
 
 AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend', # Default backend for username/password login
-    'allauth.account.auth_backends.AuthenticationBackend', # Allauth backend for email and social login 
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
 )
 
 SITE_ID = 1
@@ -225,4 +229,3 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASS')
 DEFAULT_FROM_EMAIL = os.getenv('EMAIL_HOST_USER')
 
 # DEFAULT_FROM_EMAIL = 'urbanflow@example.com'
-

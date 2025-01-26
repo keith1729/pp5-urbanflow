@@ -87,12 +87,40 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='OrderLineItem',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                (
+                    'id',
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name='ID'
+                    )
+                ),
                 ('product_size', models.CharField(max_length=2)),
                 ('quantity', models.IntegerField(default=0)),
-                ('lineitem_total', models.DecimalField(decimal_places=2, editable=False, max_digits=6)),
-                ('order', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='lineitems', to='checkout.order')),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='products.product')),
+                (
+                    'lineitem_total',
+                    models.DecimalField(
+                        decimal_places=2,
+                        editable=False,
+                        max_digits=6
+                    )
+                ),
+                (
+                    'order',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name='lineitems',
+                        to='checkout.order'
+                    )
+                ),
+                (
+                    'product',
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to='products.product'
+                    )
+                ),
             ],
         ),
     ]

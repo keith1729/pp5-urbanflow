@@ -33,8 +33,7 @@ urlpatterns = [
     path('wishlist/', include('wishlist.urls')),
     path('reviews/', include('reviews.urls')),
     path('newsletter/', include('newsletter.urls')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT )
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 handler404 = 'urbanflow.views.custom404'
 handler500 = 'urbanflow.views.custom500'
-

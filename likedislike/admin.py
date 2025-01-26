@@ -3,17 +3,17 @@ from .models import LikeDislike
 
 # Register your models here.
 
- 
-class LikeDislikeAdmin(admin.ModelAdmin): 
+
+class LikeDislikeAdmin(admin.ModelAdmin):
 
     list_display = (
-        'user', 
-        'product', 
-        'vote', 
+        'user',
+        'product',
+        'vote',
         'created_at',
-        ) 
+        )
 
-    list_filter = ('vote', 'created_at') 
+    list_filter = ('vote', 'created_at')
     search_fields = ('user__username', 'product__name')
 
 

@@ -1,4 +1,10 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render,
+    redirect,
+    reverse,
+    get_object_or_404,
+    HttpResponse
+)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -12,6 +18,7 @@ import stripe
 import json
 
 # Create your views here.
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -29,6 +36,7 @@ def cache_checkout_data(request):
             processed right now. Please try again.')
         return HttpResponse(content=e, status=400)
 
+
 def checkout(request):
     """ A view to show the checkout """
 
@@ -38,15 +46,15 @@ def checkout(request):
     if request.method == 'POST':
         bag = request.session.get('bag', {})
 
-        form_data = { 
-            'full_name': request.POST.get('full_name', ''), 
-            'email': request.POST.get('email', ''), 
-            'phone_number': request.POST.get('phone_number', ''), 
-            'street_address1': request.POST.get('street_address1', ''), 
-            'street_address2': request.POST.get('street_address2', ''), 
-            'town_or_city': request.POST.get('town_or_city', ''), 
-            'county': request.POST.get('county', ''), 
-            'country': request.POST.get('country', ''), 
+        form_data = {
+            'full_name': request.POST.get('full_name', ''),
+            'email': request.POST.get('email', ''),
+            'phone_number': request.POST.get('phone_number', ''),
+            'street_address1': request.POST.get('street_address1', ''),
+            'street_address2': request.POST.get('street_address2', ''),
+            'town_or_city': request.POST.get('town_or_city', ''),
+            'county': request.POST.get('county', ''),
+            'country': request.POST.get('country', ''),
             }
 
         order_form = OrderForm(form_data)
@@ -69,14 +77,16 @@ def checkout(request):
                         order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the products wasn't found in our database. "
                         "Please contact us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-            
+
             request.session['save_info'] = 'save_info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_number]))
+            return redirect(
+                reverse('checkout_success', args=[order.order_number])
+                )
         else:
             messages.error(request, 'There was an error with your form. \
                 Please check your information.')
@@ -91,8 +101,8 @@ def checkout(request):
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
-            amount = stripe_total,
-            currency = settings.STRIPE_CURRENCY,
+            amount=stripe_total,
+            currency=settings.STRIPE_CURRENCY,
         )
 
         if request.user.is_authenticated:
@@ -121,10 +131,15 @@ def checkout(request):
     context = {
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
-        'client_secret': intent.client_secret if request.method == 'GET' else '',
+        'client_secret': (
+            intent.client_secret
+            if request.method == 'GET'
+            else ''
+        ),
     }
 
     return render(request, template, context)
+
 
 def checkout_success(request, order_number):
     """ A view to show successful checkouts """

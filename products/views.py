@@ -10,6 +10,7 @@ from reviews.models import Review
 
 # Create your views here.
 
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -27,12 +28,12 @@ def all_products(request):
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
-                sortkey = 'category__name'         
+                sortkey = 'category__name'
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
-            products = products.order_by(sortkey)           
+            products = products.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET.get('category').split(',')
@@ -42,9 +43,15 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(
+                    request,
+                    "You didn't enter any search criteria!"
+                )
                 return redirect(reverse('products'))
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = (
+                Q(name__icontains=query) |
+                Q(description__icontains=query)
+            )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -58,20 +65,27 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-@login_required 
-def product_detail(request, product_id): 
-    """ A view to show a specific product details """ 
-    
-    product = get_object_or_404(Product, pk=product_id) 
-    user_wishlist = Wishlist.objects.filter(user=request.user).values_list('product', flat=True) 
+
+@login_required
+def product_detail(request, product_id):
+    """ A view to show a specific product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+    user_wishlist = Wishlist.objects.filter(
+        user=request.user
+    ).values_list(
+        'product',
+        flat=True
+    )
     reviews = Review.objects.filter(product=product)
-    context = { 
-        'product': product, 
-        'user_wishlist': user_wishlist, 
+    context = {
+        'product': product,
+        'user_wishlist': user_wishlist,
         'reviews': reviews,
-        } 
-        
+        }
+
     return render(request, 'products/product_detail.html', context)
+
 
 @login_required
 def add_product(request):
@@ -88,7 +102,10 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add product. Please ensure the form is valid.'
+            )
     else:
         form = ProductForm()
     template = 'products/add_product.html'
@@ -97,6 +114,7 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def edit_product(request, product_id):
@@ -114,7 +132,10 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update product. Please ensure the form is valid.'
+            )
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -127,6 +148,7 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
@@ -134,9 +156,9 @@ def delete_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
-    
+
     return redirect(reverse('products'))

@@ -16,6 +16,7 @@ def newsletter_signup(request):
         form = SubscriberForm(user_email=request.user.email)
     return render(request, 'newsletter_signup.html', {'form': form})
 
+
 def newsletter_thank_you(request):
     """ View to render thank you message """
 
