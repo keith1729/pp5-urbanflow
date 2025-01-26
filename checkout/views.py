@@ -8,6 +8,7 @@ from django.shortcuts import (
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
+from django.core.mail import send_mail
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product
@@ -167,6 +168,9 @@ def checkout_success(request, order_number):
             if user_profile_form.is_valid():
                 user_profile_form.save()
 
+    # Send confirmation email
+    send_confirmation_email(order.email)
+
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
@@ -180,3 +184,15 @@ def checkout_success(request, order_number):
     }
 
     return render(request, template, context)
+
+
+def send_confirmation_email(user_email):
+    """ Order confirmation email """
+
+    send_mail(
+        'Purchase Confirmation',
+        'Thank you for your purchase! Your order is being processed.',
+        'keithurbanflow@gmail.com',
+        [user_email],
+        fail_silently=False,
+    )
