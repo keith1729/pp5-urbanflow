@@ -85,33 +85,41 @@ Together, these colors create a cohesive and engaging visual experience that ref
 
 ### Existing features
     
-    - Header
-    <img src="assets/images/header.png" alt="Features header">
+- Header
 
-    - Footer
-    <img src="assets/images/footer.png" alt="Features footer">
+<img src="assets/images/header.png" alt="Features header">
 
-    - User dropdown
+- Footer
+
+<img src="assets/images/footer.png" alt="Features footer">
+
+- User dropdown
     
-    <img src="assets/images/userDropdown.png" alt="Features user dropdown">
+<img src="assets/images/userDropdown.png" alt="Features user dropdown">
 
-    - Shopping bag
-    <img src="assets/images/shoppingBag.png" alt="Features shopping bag">
+- Shopping bag
 
-    - Checkout
-    <img src="assets/images/checkout.png" alt="Features checkout">
+<img src="assets/images/shoppingBag.png" alt="Features shopping bag">
 
-    - Product management
-    <img src="assets/images/productManagement.png" alt="Features product management">
+- Checkout
 
-    - Wishlist
-    <img src="assets/images/wishlist.png" alt="Features wishlist">
+<img src="assets/images/checkout.png" alt="Features checkout">
 
-    - Profile
-    <img src="assets/images/profile.png" alt="Features profile">
+- Product management
 
-    - Reviews
-    <img src="assets/images/reviews.png" alt="Features reviews">
+<img src="assets/images/productManagement.png" alt="Features product management">
+
+- Wishlist
+
+<img src="assets/images/wishlist.png" alt="Features wishlist">
+
+- Profile
+
+<img src="assets/images/profile.png" alt="Features profile">
+
+ - Reviews
+
+<img src="assets/images/reviews.png" alt="Features reviews">
 
 ## Technologies Used
 
