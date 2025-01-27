@@ -31,16 +31,12 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',
     '8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net',
-    '8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io',
     '.herokuapp.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-keith1729-pp5urbanflow-4k2njwnd9zr.ws.codeinstitute-ide.net',
     'https://8000-keith1729-pp5urbanflow-xgzrri30855.ws.codeinstitute-ide.net',
-    'https://8000-keith1729-pp5urbanflow-s0h6vk9hi29.ws-eu117.gitpod.io',
     'https://*.herokuapp.com'
 ]
 

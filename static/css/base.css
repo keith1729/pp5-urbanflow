@@ -39,7 +39,7 @@ body {
 
 .btn-outline-white {
     background: #000;
-    color: #FF5F1F !important; /* Use !important to override link colors for <a> elements */
+    color: #FF5F1F !important;
     border: 1px solid #fff;
 }
 
@@ -104,7 +104,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
+/* bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -122,7 +122,7 @@ input[name='q']::placeholder {
     height: 2px;
 }
 
-/* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+/* from CSS-tricks */
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -174,10 +174,9 @@ input[name='q']::placeholder {
 }
 
 /* Allauth form formatting */
-
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #007bff; /* text-primary */
+    margin-top: 1.5rem;
+    color: #007bff;
 }
 
 .allauth-form-inner-content input {
@@ -195,7 +194,6 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
 	display: inline-block;
     font-weight: 400;
     color: #FF5F1F;
@@ -224,7 +222,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: #17a2b8;
 }
 
 .form-text {
@@ -232,7 +230,6 @@ input[name='q']::placeholder {
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -263,16 +260,13 @@ input[name='q']::placeholder {
     text-decoration: none; 
 }
   
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
+/* Media Queries */
 @media (min-width: 1200px) {
   .container {
     max-width: 100%;
   }
 }
 
-/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -287,7 +281,6 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
